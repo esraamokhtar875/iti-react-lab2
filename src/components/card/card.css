@@ -1,0 +1,18 @@
+.card{
+    border:1px solid gray;
+    padding:1rem;
+    width:300px;
+}
+
+.card img{
+    width:100%;
+    height:auto;
+}
+
+.in-stock{
+    color:green;
+}
+
+.out-of-stock{
+    color:red;
+}
