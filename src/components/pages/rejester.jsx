@@ -3,6 +3,7 @@
 import {  useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import './register.css'
 
 
 function Register() {
@@ -137,7 +138,7 @@ function Register() {
         </Form.Text>}
       </Form.Group>
 
-      <Button variant="primary" type="submit">
+      <Button variant="primary" className='sum' type="submit">
         Submit
       </Button>
     </Form>

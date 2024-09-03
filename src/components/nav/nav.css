@@ -6,42 +6,23 @@
  .NavBar{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    /* background-color: green; */
-    /* color: green; */
 }
-a{
-    /* color: black; */
+Link{
     text-decoration: none;
 }
-/* .grn{
-    background-color: green;
-    /* color: white ; */
-    /* padding: 10px; */
-    /* box-shadow: 2px 2px black; */
-    /* font-size: 24px; */
-    /* font-weight: bold; */
-    /* cursor: pointer; */
-    /* display: flex; */
-    /* justify-content: space-between; */
-/* } */ 
+
 
 #bar{
     border:1px solid white;
-    /* shadow: 1px 1px gray ; */
-    /* display:flex; */
-    /* justify-content: space-between; */
-    /* color:white; */
-    /* margin-left: 20px; */
 }
 .link-as-text{
     text-decoration: none;
-    /* color: white; */
-    /* margin: 10px; */
-    /* display: flex; */
-    /* align-items: center; */
 }
 
 .num{
     position: absolute;
+    top: 0;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
 }

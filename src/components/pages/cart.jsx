@@ -2,6 +2,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeProduct, incrementQuantity, decrementQuantity } from '../../store/cartslice';
+import '../pages/cart.css';
 
 const CartPage = () => {
   const dispatch = useDispatch();
@@ -12,10 +13,10 @@ const CartPage = () => {
   }
 
   return (
-    <div>
-      <h1>Cart</h1>
+    <div className='chose' >
       {cart.items.map(item => (
-        <div key={item.id}>
+        <div key={item.id} className='buy'>
+          <img src={item.thumbnail} alt={item.title} />
           <h2>{item.name}</h2>
           <p>Quantity: {item.quantity}</p>
           <p>Price: £{item.price}</p>
@@ -25,7 +26,7 @@ const CartPage = () => {
           <button onClick={() => dispatch(removeProduct(item.id))}>Remove</button>
         </div>
       ))}
-      <h2>Total Price: £{cart.totalPrice}</h2>
+      <h2 className="to">Total Price: £{cart.totalPrice}</h2>
     </div>
   );
 };
